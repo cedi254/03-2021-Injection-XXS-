@@ -1,0 +1,16 @@
+{
+  "name": "owasp-a03-2021-injection-xss-demo",
+  "version": "1.0.0",
+  "description": "School demo for OWASP Top 10 2021 A03 Injection with Cross-Site Scripting (XSS)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["owasp", "xss", "injection", "security", "demo"],
+  "author": "Cedric Fischer",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
