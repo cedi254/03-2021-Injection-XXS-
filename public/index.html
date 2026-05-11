@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OWASP XSS Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>OWASP A03:2021 – Injection (XSS)</h1>
+
+    <p>This demo shows unsafe vs safe rendering of user input.</p>
+
+    <textarea id="input" placeholder="Write a comment..."></textarea>
+
+    <div class="buttons">
+      <button onclick="showUnsafe()">Unsafe Version</button>
+      <button onclick="showSafe()">Safe Version</button>
+    </div>
+
+    <h2>Output</h2>
+
+    <div id="output"></div>
+
+    <div class="payload">
+      <h3>Example Payload</h3>
+      <code>&lt;b&gt;Injected Content&lt;/b&gt;</code>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
